@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
-import logo from '../../logo.svg'
-import './page.css'
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../../node_modules/font-awesome/css/font-awesome.min.css'
+import ProductList from '../../components/ProductList'
+import ProductSearch from '../../components/ProductSearch'
 
 class Home extends Component {
   render() {
     return (
-      <div className="App">
-        <input placeholder='OK OK OK OK OK'/>
+      <div className='container'>
+        <ProductSearch />
+        <ProductList />
       </div>
-    );
+    )
   }
 }
 

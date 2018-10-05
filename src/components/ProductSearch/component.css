@@ -1,0 +1,12 @@
+.search-form{
+    padding-bottom: 30px;
+    padding-top: 60px;
+}
+
+.search-field {
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-family: 'Ubuntu', sans-serif;   
+}
