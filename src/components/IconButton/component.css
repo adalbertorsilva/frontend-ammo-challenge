@@ -1,9 +1,5 @@
-.btn {
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
 .search-button {
     height: 40px;
-    border-radius: 20px;
+    width: 40px;
+    border-radius: 30px;
 }

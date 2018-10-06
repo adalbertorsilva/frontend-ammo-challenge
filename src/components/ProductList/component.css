@@ -1,7 +1,5 @@
-.table-header {
-    font-family: 'Ubuntu', sans-serif;   
-}
-
 th {
-    text-align: center
+    font-family: 'Ubuntu', sans-serif;   
+    text-align: center;
+    font-size: 20px;
 }

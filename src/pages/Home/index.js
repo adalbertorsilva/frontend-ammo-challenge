@@ -3,13 +3,30 @@ import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../../node_modules/font-awesome/css/font-awesome.min.css'
 import ProductList from '../../components/ProductList'
 import ProductSearch from '../../components/ProductSearch'
+import SelectProductsPerPage from '../../components/SelectProductsPerPage'
+import Pagination from '../../components/Pagination'
+import Grid from 'react-bootstrap/lib/Grid'
+import Col from 'react-bootstrap/lib/Col'
+import './page.css'
 
 class Home extends Component {
   render() {
     return (
       <div className='container'>
-        <ProductSearch />
-        <ProductList />
+
+        <Grid>
+          <Col>
+            <ProductSearch />
+          </Col>
+          
+          <Col>
+            <ProductList />
+          </Col>
+
+          <SelectProductsPerPage />
+        </Grid>
+
+        <Pagination />
       </div>
     )
   }
