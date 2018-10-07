@@ -34,7 +34,6 @@ class ProductSearch extends Component {
         const { changeSearch, search } = this.props
 
         return (
-
             <Grid className='search-form'>
                 <Row className='show-grid'>
                     <Col md={11}>

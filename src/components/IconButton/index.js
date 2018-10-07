@@ -17,6 +17,7 @@ class IconButton extends Component{
     }
 }
 
+
 const mapStateToProps = state => ({search: state.searchReducer.search})
 const mapDispatchToProps = dispatch => bindActionCreators(actionCreator, dispatch)
 
