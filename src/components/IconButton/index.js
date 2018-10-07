@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/lib/Button'
 import './component.css'
 
 
-class IconButton extends Component{
+export class IconButton extends Component{
     
     render () {
         return (

@@ -12,7 +12,7 @@ import actionCreator from '../../action_creators'
 
 import './component.css'
 
-class ProductSearch extends Component {
+export class ProductSearch extends Component {
 
     constructor () {
         super()
