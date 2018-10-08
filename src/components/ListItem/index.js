@@ -1,22 +1,36 @@
 import React, { Component } from 'react'
+import autoBind from 'auto-bind'
 import './component.css'
 
 class ListItem extends Component {
 
+    constructor () {
+        super()
+        autoBind(this)
+    }
+
+    formatToCurrency (value) {
+        return parseFloat(value).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+    }
+
+
     render () {
+
+        const { product_image, product_name, category, product_value } = this.props.product
+
         return (
             <tr>
                 <td>
-                    <img alt='' src={this.props.product.product_image} />
+                    <img alt='' src={product_image} />
                 </td>
                 <td className='align-middle'>
-                    {this.props.product.product_name}
+                    {product_name}
                 </td>
                 <td className='align-middle'>
-                    {this.props.product.category}
+                    {category}
                 </td>
                 <td className='align-middle'>
-                    {this.props.product.product_value} R$
+                    R$ {this.formatToCurrency(product_value)}
                 </td>
             </tr>
         )
